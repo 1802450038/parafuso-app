@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {}
+
+.header {
+    background-color: red;
+    min-height: 20vh;
+    padding: 0 10vw;
+}
+
+.header .header-top {
+    background-color: green;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header-top .header-items-left,
+.header .header-top .header-items-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 5px;
+    background-color: yellow;
+}
+
+/* To remove */
+.header .header-top .header-items-right {
+
+    background-color: magenta;
+}
+
+.header .header-top .header-item {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+    flex-direction: row;
+    column-gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 10pt;
+    height: 5vh;
+}
+
+
+.header-middle-items {
+    background-color: orange;
+    min-height: 5vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: row;
+}
+
+.header-middle-items .header-middle-items-left,
+.header-middle-items .header-middle-items-right,
+.header-middle-items .header-middle-items-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: purple;
+    height: 5vw;
+    overflow: hidden;
+}
+
+
+
+.header-middle-items .header-middle-items-center {
+    width: 40%;
+    background-color: blue;
+}
+
+.header-middle-items .header-middle-item-img {
+    width: 100%;
+    height: 50px;
+}
+
+.header-middle-items-right .header-middle-item-button {
+    display: flex;
+    background-color: yellow;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+    height: 50%;
+    font-size:14pt;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.header-middle-items-center .input-group {
+    font-size: 16pt;
+}
+
+.header-middle-items-center .input-group input {
+    height: 50px;
+}
+
+.header-bottom {
+    background-color: pink;
+    height: 5vh;
+}
+
+.header-bottom-items {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.header-bottom .header-bottom-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 10;
+    background-color: lightblue;
+    column-gap: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+}
+
+.body {
+    background-color: gray;
+    height: 100%;
+    /* width: 100%; */
+    padding:0 10vw;
+}
+
+.body .section.first .content {
+    background-color: red;
+    height: 40vh;
+    width: 100%;
+}
+
+.body .section.firs .gallery {
+    /* height: 100vh;  */
+    width: 100%;
+}
