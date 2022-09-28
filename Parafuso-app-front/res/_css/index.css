@@ -144,7 +144,123 @@ body {
     width: 100%;
 }
 
-.body .section.firs .gallery {
-    /* height: 100vh;  */
+.body .section.first .gallery {
     width: 100%;
 }
+
+.grid.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid.flex-colum {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid.flex-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    row-gap: 40px;
+}
+
+.grid .grid-item.one-of-100 {
+    width: 100%;
+}
+.grid .grid-item.two-of-100 {
+    width: calc(100% / 2);
+}
+.grid .grid-item.three-of-100 {
+    width: calc(100% / 3);
+    
+}
+.grid .grid-item.four-of-100 {
+    width: calc(100% / 4);
+}
+.grid .grid-item.five-of-100 {
+    width: calc(100% / 5);
+}
+.grid .grid-item.six-of-100 {
+    width: calc(100% / 6);
+}
+.grid .grid-item.seven-of-100 {
+    width: calc(100% / 7);
+}
+.grid .grid-item.eight-of-100 {
+    width: calc(100% / 8);
+}
+.grid .grid-item.nine-of-100 {
+    width: calc(100% / 9);
+}
+.grid .grid-item.ten-of-100 {
+    width: calc(100% / 10);
+}
+.grid .grid-item.eleven-of-100 {
+    width: calc(100% / 11);
+}
+.grid .grid-item.twelve-of-100 {
+    width: calc(100% / 12);
+    background-color: magenta;
+}
+
+.section.third .card {
+    padding: 20px;
+    height: 400px;
+}
+
+.section.fourth {
+    background-color: beige;
+    padding-bottom: 30px;
+}
+
+.section.fourth .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: magenta; */
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    column-gap: 10px;
+    position: relative;
+}
+
+.section.fourth .title::before {
+    background-color: firebrick;
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,200%);
+    height: 5px;
+    width: 50px;
+}
+.section.fourth .item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    aspect-ratio : 1 / 1;
+    border-radius: 50%;
+}
+
+.section.fourth .item img {
+    position: absolute;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    border-radius: 50%;
+}
+
+.section.fourth .item .span {
+    z-index: 99;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+    transform: translateY(100%);
+    text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.13);
+}
+
