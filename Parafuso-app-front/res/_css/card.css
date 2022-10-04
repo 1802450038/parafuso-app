@@ -77,4 +77,44 @@
 }
 
 
+.card-image {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: calc(25% - 7.5px);
+    margin-left: 2.5px;
+    height: 200px;
+    background-color: magenta;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.card-image-legend {
+    background-color: rgba(56, 56, 56, 0.527);
+    width: 100%;
+    opacity: 0;
+    padding: 10px 10px;
+    z-index: 9999;
+    color: rgb(226, 226, 226);
+    transition: all .3s ease-in-out;
+}
+
+.card-image-legend p {
+    line-break: auto;
+    word-wrap: break-word;
+}
+
+
+.card-image:hover .card-image-legend {
+    opacity: 1;
+}
 

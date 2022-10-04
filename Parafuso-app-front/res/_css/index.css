@@ -264,3 +264,26 @@ body {
     text-shadow: 0px 0px 3px rgba(37, 37, 37, 0.13);
 }
 
+.section.fifth .grid.flex-wrap {
+    row-gap: 7.5px;
+    column-gap: 5px;
+}
+
+.footer-top .footer-links .links-col-left,
+.footer-top .footer-links .links-col-middle,
+.footer-top .footer-links .links-col-right {
+    background-color: aqua;
+    width: calc(100% / 3);
+    padding-top: 10px;
+    padding: 30px 90px;
+}
+
+.footer-top .footer-links .links-col-left .grid,
+.footer-top .footer-links .links-col-middle .grid,
+.footer-top .footer-links .links-col-right .grid{ 
+    row-gap: 10px;
+}
+
+.footer-top .grid i {
+    margin-right: 10px;
+}
