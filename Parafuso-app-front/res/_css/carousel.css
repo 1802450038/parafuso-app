@@ -16,7 +16,7 @@ body { font-family: sans-serif; }
   width: 66%;
   height: 40vh;
   /* margin-right: 10px; */
-  background: #8C8;
+  /* background: var(--main-color-l3); */
   counter-increment: gallery-cell;
   position: relative;
 }
@@ -73,7 +73,7 @@ body { font-family: sans-serif; }
   width: 220px;
   height: 20vh;
   /* margin-right: 10px; */
-  background: #8C8;
+  background: var(--main-color-l3);
   counter-increment: gallery-cell;
   position: relative;
 }
@@ -91,15 +91,17 @@ body { font-family: sans-serif; }
   font-size: 12pt;
   text-transform: uppercase;
   font-weight: bold;
+  color: var(--main-color-d1);
 }
 .gallery-cell .cell-item .cell-item-ico {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30pt;
-  background-color: red;
+  background-color: var(--sub-color-l3);
   padding: 20px;
   height: 90px;
   width: 90px;
   border-radius: 50%;
+  color: var(--main-color-l3);
 }
