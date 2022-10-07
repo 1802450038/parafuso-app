@@ -1,3 +1,21 @@
+:root {
+    --main-color-l3: rgb(255, 255, 255);
+    --main-color-l2: rgb(230, 229, 229);
+    --main-color-l1: rgb(196, 196, 196);
+    --main-color: rgb(156, 156, 156);
+    --main-color-d1: rgb(116, 116, 116);
+    --main-color-d2: rgb(84, 84, 84);
+    --main-color-d3: rgb(40, 40, 40);
+
+    --sub-color-l3: rgb(255, 73, 73);
+    --sub-color-l2: rgb(255, 40, 40);
+    --sub-color-l1: rgb(255, 22, 22);
+    --sub-color: rgb(255, 0, 0);
+    --sub-color-d1: rgb(219, 4, 4);
+    --sub-color-d2: rgb(185, 2, 2);
+    --sub-color-d3: rgb(129, 1, 1);
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -7,14 +25,14 @@ body {
 :root {}
 
 .header {
-    background-color: red;
+    background-color: var(--main-color-l3);
     min-height: 20vh;
-    padding: 0 10vw;
 }
 
 .header .header-top {
-    background-color: green;
+    /* background-color: green; */
     min-height: 5vh;
+    padding: 0 10vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,32 +45,34 @@ body {
     align-items: center;
     flex-direction: row;
     column-gap: 5px;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 /* To remove */
 .header .header-top .header-items-right {
 
-    background-color: magenta;
+    /* background-color: magenta; */
 }
 
 .header .header-top .header-item {
-    background-color: aqua;
+    background-color: var(--sub-color-l3);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 15px;
+    border-radius: 5px;
     flex-direction: row;
-    column-gap: 10px;
+    /* column-gap: 10px; */
     text-decoration: none;
-    color: black;
+    color: var(--main-color-l3);
     font-size: 10pt;
     height: 5vh;
 }
 
 
 .header-middle-items {
-    background-color: orange;
+    /* background-color: orange; */
+    padding: 20px 10vw;
     min-height: 5vh;
     display: flex;
     /* justify-content: center; */
@@ -67,7 +87,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 30%;
-    background-color: purple;
+    background-color: var(--main-color-l3);
     height: 5vw;
     overflow: hidden;
 }
@@ -76,17 +96,16 @@ body {
 
 .header-middle-items .header-middle-items-center {
     width: 40%;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .header-middle-items .header-middle-item-img {
-    width: 100%;
-    height: 50px;
+    height: 100%;
 }
 
 .header-middle-items-right .header-middle-item-button {
     display: flex;
-    background-color: yellow;
+    /* background-color: yellow; */
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -96,7 +115,7 @@ body {
     font-size:14pt;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: var(--main-color);
 }
 
 .header-middle-items-center .input-group {
@@ -108,7 +127,7 @@ body {
 }
 
 .header-bottom {
-    background-color: pink;
+    /* background-color: pink; */
     height: 5vh;
 }
 
@@ -116,6 +135,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 100%;
+    background-color: var(--main-color-l2);
 }
 
 .header-bottom .header-bottom-item {
@@ -124,22 +144,25 @@ body {
     align-items: center;
     height: 100%;
     flex-grow: 10;
-    background-color: lightblue;
+    background-color: var(--sub-color-l3);
     column-gap: 10px;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: var(--main-color-l3);
+}
+.header-bottom .header-bottom-item:hover {
+    background-color: var(--sub-color-l2);
+    /* color: var(--sub-color-l3); */
 }
 
 .body {
-    background-color: gray;
+    background-color: var(--main-color-l3);
     height: 100%;
     /* width: 100%; */
-    padding:0 10vw;
 }
 
 .body .section.first .content {
-    background-color: red;
+    /* background-color: red; */
     height: 40vh;
     width: 100%;
 }
@@ -205,6 +228,14 @@ body {
 .grid .grid-item.twelve-of-100 {
     width: calc(100% / 12);
     background-color: magenta;
+}
+
+.section.second {
+    padding: 0 10vw;
+}
+
+.section.third {
+    padding: 0 10vw;
 }
 
 .section.third .card {

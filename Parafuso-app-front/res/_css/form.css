@@ -1,5 +1,5 @@
 .input-group {
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     position: relative;
     display: flex;
@@ -14,6 +14,11 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    color: var(--sub-color-d2);
+    padding-left: 20px;
+    font-size: 12pt;
+    background-color: var(--main-color-l2);
+    border: 1px solid var(--main-color-l1);
 }
 
 .input-group i {
@@ -21,4 +26,5 @@
     left: 100%;
     transform: translate(-100%, 0%);
     margin-left: -20px;
+    color: var(--sub-color-d2);
 }
